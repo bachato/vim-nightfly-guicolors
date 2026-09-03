@@ -308,10 +308,13 @@ M.style = function()
   if g.nightflyNormalPmenu then
     highlight(0, "Pmenu", { bg = bg, fg = cadet_blue })
     highlight(0, "PmenuBorder", { bg = bg, fg = slate_blue })
+    highlight(0, "PmenuKind", { bg = bg, fg = malibu })
   else
     highlight(0, "Pmenu", { bg = ink_blue, fg = white })
     highlight(0, "PmenuBorder", { bg = ink_blue, fg = carbon_blue })
+    highlight(0, "PmenuKind", { bg = ink_blue, fg = malibu })
   end
+  highlight(0, "PmenuKindSel", { link = "PmenuKind" })
   highlight(0, "PmenuSel", { bg = cyan_blue, fg = white_blue })
   highlight(0, "PmenuSbar", { bg = ink_blue })
   highlight(0, "PmenuThumb", { bg = steel_blue })
